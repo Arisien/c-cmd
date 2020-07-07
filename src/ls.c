@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <dirent.h>
 #include <string.h>
-#include "sutil.h"
-#include "color.h"
+#include "./header/sutil.h"
+#include "./header/cutil.h"
 
 //Ls command in C by Arisien (https://github.com/Arisien) 
 

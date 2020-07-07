@@ -4,6 +4,11 @@
 
 Opensource terminal commands coded in C language. No external libraries are required for the programs to function. A c compiler is required to build the commands. Running the binaries does not require any dependenices.
 
+## Features
+
+* ANSI colored commands
+* Linux support, Windows WIP
+
 ## Contributors
 
 * [Arisien](https://github.com/Arisien) - Main developer
@@ -12,7 +17,7 @@ Opensource terminal commands coded in C language. No external libraries are requ
 
 * Clone the repository with `git clone https://github.com//SnipeJS.git`
 * Compile a command with `gcc [cmd].c`
-* Run the created executable *(eg `[cmd].exe` (windows) or `./a.out` (linux))*
+* Run the created executable *(eg `a.exe` (windows) or `./a.out` (linux))*
 
 ## License
 
