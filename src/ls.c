@@ -2,15 +2,12 @@
 #include <dirent.h>
 #include <string.h>
 #include "sutil.h"
-
-#define ANSI_BLUE "\x1b[34m"
-#define ANSI_GREEN "\x1b[32m"
-#define ANSI_YELLOW "\x1b[33m"
-#define ANSI_DEF "\x1b[0m"
+#include "color.h"
 
 //Ls command in C by Arisien (https://github.com/Arisien) 
 
 int main() {
+
 	struct dirent *de;
 
 	DIR *dr = opendir(".");
@@ -28,10 +25,10 @@ int main() {
 			continue;
 
 		if(opendir(filename) != NULL)
-			printf(ANSI_BLUE "%s " ANSI_DEF, filename);
+			printc(filename, ANSI_BLUE);
 
 		else if (endsWith(filename, ".exe") || endsWith(filename, ".out"))
-			printf(ANSI_GREEN "%s " ANSI_DEF, filename);
+			printc(filename, ANSI_GREEN);
 
 		else printf("%s ", filename);
 	}
